@@ -69,11 +69,11 @@ module.exports = {
     extensions: ['.js', '.json', '.jsx', ''],
     //CHANGE_INFERNO
     alias: {
-      'inferno': "../node_modules/inferno/dist/inferno.min.js",
-      'inferno-component': "../node_modules/inferno/dist/inferno-component.min.js",
-      'inferno-dom': "../node_modules/inferno/dist/inferno-dom.min.js",
-      'inferno-create-element': "../node_modules/inferno/dist/inferno-create-element.min.js",
-      'inferno-create-class': "../node_modules/inferno/dist/inferno-create-class.min.js",
+      // 'inferno': "../node_modules/inferno/dist/inferno.min.js",
+      // 'inferno-component': "../node_modules/inferno/dist/inferno-component.min.js",
+      // 'inferno-dom': "../node_modules/inferno/dist/inferno-dom.min.js",
+      // 'inferno-create-element': "../node_modules/inferno/dist/inferno-create-element.min.js",
+      // 'inferno-create-class': "../node_modules/inferno/dist/inferno-create-class.min.js",
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web'
