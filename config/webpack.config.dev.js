@@ -76,7 +76,7 @@ module.exports = {
       // 'inferno-create-class': "../node_modules/inferno/dist/inferno-create-class.min.js",
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-      'react-native': 'react-native-web'
+      // 'react-native': 'react-native-web'
     }
   },
   // Resolve loaders (webpack plugins for CSS, images, transpilation) from the

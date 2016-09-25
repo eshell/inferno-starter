@@ -13,7 +13,7 @@ module.exports = {
   parser: 'babel-eslint',
 
   // import plugin is temporarily disabled, scroll below to see why
-  plugins: [/*'import', */'flowtype', 'jsx-a11y', 'react'],
+  plugins: [/*'import', */'flowtype', 'jsx-a11y'],
 
   env: {
     browser: true,
@@ -120,11 +120,11 @@ module.exports = {
     'no-unreachable': 'warn',
     'no-unused-expressions': 'warn',
     'no-unused-labels': 'warn',
-    'no-unused-vars': ['warn', {
-      vars: 'local',
-      varsIgnorePattern: '^_',
-      args: 'none'
-    }],
+    // 'no-unused-vars': 'warn', {
+    //   vars: 'local',
+    //   varsIgnorePattern: '^_',
+    //   args: 'none'
+    // }],
     'no-use-before-define': ['warn', 'nofunc'],
     'no-useless-computed-key': 'warn',
     'no-useless-concat': 'warn',
@@ -171,20 +171,20 @@ module.exports = {
     // 'import/no-unresolved': ['warn', { commonjs: true }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
-    'react/jsx-equals-spacing': ['warn', 'never'],
-    'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
-    'react/jsx-no-undef': 'warn',
-    'react/jsx-pascal-case': ['warn', {
-      allowAllCaps: true,
-      ignore: [],
-    }],
-    'react/jsx-uses-react': 'warn',
-    'react/jsx-uses-vars': 'warn',
-    'react/no-deprecated': 'warn',
-    'react/no-direct-mutation-state': 'warn',
-    'react/no-is-mounted': 'warn',
-    'react/react-in-jsx-scope': 'warn',
-    'react/require-render-return': 'warn',
+    // 'react/jsx-equals-spacing': ['warn', 'never'],
+    // 'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
+    // 'react/jsx-no-undef': 'warn',
+    // 'react/jsx-pascal-case': ['warn', {
+    //   allowAllCaps: true,
+    //   ignore: [],
+    // }],
+    // 'react/jsx-uses-react': 'warn',
+    // 'react/jsx-uses-vars': 'warn',
+    // 'react/no-deprecated': 'warn',
+    // 'react/no-direct-mutation-state': 'warn',
+    // 'react/no-is-mounted': 'warn',
+    // 'react/react-in-jsx-scope': 'warn',
+    // 'react/require-render-return': 'warn',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/aria-role': 'warn',

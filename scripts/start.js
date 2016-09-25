@@ -142,25 +142,25 @@ function setupCompiler(port, protocol) {
   });
 }
 
-function openBrowser(port, protocol) {
-  if (process.platform === 'darwin') {
-    try {
-      // Try our best to reuse existing tab
-      // on OS X Google Chrome with AppleScript
-      execSync('ps cax | grep "Google Chrome"');
-      execSync(
-        'osascript chrome.applescript ' + protocol + '://localhost:' + port + '/',
-        {cwd: path.join(__dirname, 'utils'), stdio: 'ignore'}
-      );
-      return;
-    } catch (err) {
-      // Ignore errors.
-    }
-  }
-  // Fallback to opn
-  // (It will always open new tab)
-  opn(protocol + '://localhost:' + port + '/');
-}
+// function openBrowser(port, protocol) {
+//   if (process.platform === 'darwin') {
+//     try {
+//       // Try our best to reuse existing tab
+//       // on OS X Google Chrome with AppleScript
+//       execSync('ps cax | grep "Google Chrome"');
+//       execSync(
+//         'osascript chrome.applescript ' + protocol + '://localhost:' + port + '/',
+//         {cwd: path.join(__dirname, 'utils'), stdio: 'ignore'}
+//       );
+//       return;
+//     } catch (err) {
+//       // Ignore errors.
+//     }
+//   }
+//   // Fallback to opn
+//   // (It will always open new tab)
+//   opn(protocol + '://localhost:' + port + '/');
+// }
 
 // We need to provide a custom onError function for httpProxyMiddleware.
 // It allows us to log custom error messages on the console.
@@ -294,7 +294,7 @@ function runDevServer(port, protocol) {
     clearConsole();
     console.log(chalk.cyan('Starting the development server...'));
     console.log();
-    openBrowser(port, protocol);
+    // openBrowser(port, protocol);
   });
 }
 

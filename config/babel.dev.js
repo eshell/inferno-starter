@@ -9,15 +9,17 @@ module.exports = {
   // directory for faster rebuilds. We use findCacheDir() because of:
   // https://github.com/facebookincubator/create-react-app/issues/483
   cacheDirectory: findCacheDir({
-    name: 'react-scripts'
+    name: 'inferno-scripts'
   }),
   presets: [
     // Latest stable ECMAScript features
     require.resolve('babel-preset-latest'),
     // JSX, Flow
-    require.resolve('babel-preset-react')
+    // require.resolve('babel-preset-react'),
+    require.resolve('babel-preset-stage-0')
   ],
   plugins: [
+    // require.resolve('babel-plugin-transform-decorators-legacy'),
     require.resolve('babel-plugin-inferno'),
     // class { handleClick = () => { } }
     require.resolve('babel-plugin-transform-class-properties'),
